@@ -8,7 +8,7 @@ const Counter = () => {
   const count = useAppSelector((state) => state.counters.count);
   const dispatch = useAppDispatch();
 
-  const handleUnderLine: any = (count: number) => {
+  const handleUnderLine = (count: number) => {
     let text = "";
     for (let item = 1; item <= count; item++) {
       text += item % 5 === 0 && item > 0 ? "/" : "-";
